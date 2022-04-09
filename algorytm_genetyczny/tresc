@@ -1,0 +1,11 @@
+Podstawowy algorytm genetyczny – wyszukiwanie maksimum funkcji na zadanym przedziale <0,31>
+
+Zaimplementować algorytm w dowolnym języku programowania.
+1. Wprowadzanie danych:•
+funkcja ax3+bx2+cx+d,
+•wprowadzanie współczynników a,b,c,d 
+•wprowadzanie współczynników krzyżowania Pk i mutacji Pm
+•obliczenia, kryterium zatrzymania algorytmu związane z osiąganymi wynikami (np. brak zmiany wyniku przez X epok, N wystąpień maksymalnego wyniku)
+2. Wyświetlenie wyników:
+•pula początkowa chromosomów,
+•maksymalna wartość funkcji w przedziale, •wartość x dla maksymalnej wartości, •liczba iteracji.
