@@ -20,7 +20,6 @@ struct chromosomy_struct // structura do vektora ze stringiem na nazwe chromosom
 
 std::vector <chromosomy_struct> chromosomy_vector; // vector na poczatkowe chromosomy i chromosomy do selekcji
 std::vector <chromosomy_struct> chromosomy_vector_2; // vector na wyselekcjonowane chromosomy
-std::vector <chromosomy_struct> chromosomy_vector_poczatek; // vector na startowe chromosomy
 std::random_device rd; // deklarowanie seeda do funkcji z klasy random
 
 void funkcjaPrzystosowania(int a,int b, int c, int d, int x[6], int tbf[6])
@@ -104,7 +103,7 @@ int koloFortunyLosowanie(double kolofortunyzakresyl[6]) // ruletka
 			koniec = true;
 		}
 		i++;
-		//zmienianie zakresu
+		//zmienianie zakresu kola fortuny
 		zakres_od = zakres_do;
 		zakres_do = zakres_do + kolofortunyzakresyl[i];
 	}
@@ -145,7 +144,6 @@ int main()
 	{
 		losowanieChromosomow(tab);
 		chromosomy_vector.push_back(chromosomy_struct(("Ch"+ std::to_string(i)), tab));
-		chromosomy_vector_poczatek.push_back(chromosomy_struct(("Ch" + std::to_string(i)), tab));
 		chromosomy_vector_2.push_back(chromosomy_struct(("Ch" + std::to_string(i)), tab));
 
 	}
@@ -285,7 +283,7 @@ int main()
 	}
 	// koniec wyswietlania
 	std::cout << std::endl;
-	std::cout << proba << " - liczba iteracji"; // wyswietlanie iteracji
+	std::cout << proba << " - liczba iteracji";
 
 	return 0;
 }
